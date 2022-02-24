@@ -221,7 +221,7 @@ function createMetricsTests(t) {
       }
     }`
 
-    const path = 'library.books'
+    const path = 'library.books.LibraryBook'
 
     helper.agent.on('transactionFinished', () => {
       const operationPart = `query/${expectedName}/${path}`
@@ -258,7 +258,7 @@ function createMetricsTests(t) {
       }
     }`
 
-    const path = 'library.books'
+    const path = 'library.books.LibraryBook'
 
     helper.agent.on('transactionFinished', () => {
       const operationPart = `query/${expectedName}/${path}`

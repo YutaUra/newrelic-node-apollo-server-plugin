@@ -56,7 +56,7 @@ tap.test('createPlugin edge cases', (t) => {
     operationHooks.willSendResponse(responseContext)
     t.equal(
       operationSegment.name,
-      'GraphQL/operation/ApolloServer/undefined/<anonymous>',
+      'GraphQL/operation/ApolloServer/<unknown>',
       'should set path to undefined'
     )
     t.end()
